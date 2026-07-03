@@ -11,7 +11,10 @@ class RSYI_Activator {
 
 	public static function activate(): void {
 		require_once RSYI_PLUGIN_DIR . 'includes/class-installer.php';
+		require_once RSYI_PLUGIN_DIR . 'includes/class-roles.php';
+
 		RSYI_Installer::install();
+		RSYI_Roles::install();
 
 		self::ensure_upload_directory();
 		self::schedule_cron_events();

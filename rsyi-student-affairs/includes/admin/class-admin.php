@@ -73,7 +73,7 @@ class RSYI_Admin {
 			__( 'التقارير', 'rsyi-student-affairs' ),
 			'manage_options',
 			self::REPORTS_SLUG,
-			array( __CLASS__, 'render_placeholder' )
+			array( 'RSYI_Reports_Page', 'render' )
 		);
 
 		add_submenu_page(
