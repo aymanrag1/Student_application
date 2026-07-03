@@ -48,9 +48,10 @@ final class RSYI_Plugin {
 
 	public function init(): void {
 		RSYI_Shortcodes::register();
+		RSYI_Notification_Service::bootstrap();
+		RSYI_Reminder_Cron::register();
 
 		// REST API routes registration will be wired in Phase 15.
-		// Cron hooks will be wired in Phase 13.
 
 		/**
 		 * Fires after RSYI plugin is initialized.
