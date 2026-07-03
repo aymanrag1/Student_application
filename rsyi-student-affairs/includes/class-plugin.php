@@ -35,7 +35,7 @@ final class RSYI_Plugin {
 		add_action( 'init', array( $this, 'init' ) );
 
 		if ( is_admin() ) {
-			add_action( 'admin_menu', array( $this, 'register_admin_pages' ) );
+			RSYI_Admin::register();
 			add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_assets' ) );
 		}
 
@@ -43,6 +43,7 @@ final class RSYI_Plugin {
 
 		RSYI_Stage_One_Handler::register();
 		RSYI_Stage_Two_Handler::register();
+		RSYI_Candidate_Detail::register();
 	}
 
 	public function init(): void {
@@ -55,23 +56,6 @@ final class RSYI_Plugin {
 		 * Fires after RSYI plugin is initialized.
 		 */
 		do_action( 'rsyi_initialized' );
-	}
-
-	public function register_admin_pages(): void {
-		add_menu_page(
-			__( 'شئون الطلاب', 'rsyi-student-affairs' ),
-			__( 'شئون الطلاب', 'rsyi-student-affairs' ),
-			'manage_options',
-			'rsyi-candidates',
-			array( $this, 'render_dashboard_placeholder' ),
-			'dashicons-groups',
-			25
-		);
-	}
-
-	public function render_dashboard_placeholder(): void {
-		echo '<div class="wrap"><h1>' . esc_html__( 'شئون طلاب معهد البحر الأحمر لليخوت', 'rsyi-student-affairs' ) . '</h1>';
-		echo '<p>' . esc_html__( 'قيد التطوير - Phase 5', 'rsyi-student-affairs' ) . '</p></div>';
 	}
 
 	public function enqueue_admin_assets( string $hook ): void {

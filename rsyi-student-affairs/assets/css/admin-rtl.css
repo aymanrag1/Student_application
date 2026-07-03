@@ -1,0 +1,10 @@
+@import url('admin.css');
+
+.rsyi-admin-wrap {
+	direction: rtl;
+	text-align: right;
+}
+
+.rsyi-kv-table th {
+	text-align: right;
+}
