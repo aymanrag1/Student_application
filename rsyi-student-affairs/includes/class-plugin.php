@@ -42,6 +42,7 @@ final class RSYI_Plugin {
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_frontend_assets' ) );
 
 		RSYI_Stage_One_Handler::register();
+		RSYI_Stage_Two_Handler::register();
 	}
 
 	public function init(): void {

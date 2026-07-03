@@ -156,3 +156,22 @@
 .rsyi-hidden {
 	display: none !important;
 }
+
+.rsyi-uploaded-badge {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 6px;
+	background: #ecfdf5;
+	color: #065f46;
+	border: 1px solid #10b981;
+	border-radius: 6px;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.rsyi-uploaded-badge small {
+	display: block;
+	font-weight: 400;
+	color: #14532d;
+	margin-top: 2px;
+}
