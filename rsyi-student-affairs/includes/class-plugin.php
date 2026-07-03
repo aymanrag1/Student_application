@@ -40,12 +40,15 @@ final class RSYI_Plugin {
 		}
 
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_frontend_assets' ) );
+
+		RSYI_Stage_One_Handler::register();
 	}
 
 	public function init(): void {
-		// Shortcodes registration will be wired here in Phase 2.
-		// REST API routes registration will be wired here in Phase 15.
-		// Cron hooks will be wired here in Phase 13.
+		RSYI_Shortcodes::register();
+
+		// REST API routes registration will be wired in Phase 15.
+		// Cron hooks will be wired in Phase 13.
 
 		/**
 		 * Fires after RSYI plugin is initialized.
@@ -101,6 +104,14 @@ final class RSYI_Plugin {
 			RSYI_PLUGIN_URL . 'assets/css/' . $css_file,
 			array(),
 			RSYI_VERSION
+		);
+
+		wp_enqueue_script(
+			'rsyi-stage-one',
+			RSYI_PLUGIN_URL . 'assets/js/frontend-stage-one.js',
+			array(),
+			RSYI_VERSION,
+			true
 		);
 	}
 

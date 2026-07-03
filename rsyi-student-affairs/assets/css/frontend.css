@@ -1,0 +1,158 @@
+/* RSYI Student Affairs - Frontend Base Styles */
+
+.rsyi-form {
+	max-width: 780px;
+	margin: 0 auto;
+	padding: 24px;
+	background: #fff;
+	border: 1px solid #e2e8f0;
+	border-radius: 12px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+	font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
+	color: #1a202c;
+}
+
+.rsyi-form-intro h2 {
+	font-size: 22px;
+	margin: 0 0 8px;
+	color: #1e40af;
+}
+
+.rsyi-form-intro p {
+	margin: 0 0 20px;
+	color: #64748b;
+}
+
+.rsyi-section {
+	border: 1px solid #e2e8f0;
+	border-radius: 8px;
+	padding: 16px 20px 4px;
+	margin-bottom: 20px;
+	background: #f8fafc;
+}
+
+.rsyi-section legend {
+	padding: 0 8px;
+	font-weight: 700;
+	color: #1e40af;
+	background: #fff;
+	border: 1px solid #e2e8f0;
+	border-radius: 4px;
+}
+
+.rsyi-field {
+	display: block;
+	margin-bottom: 14px;
+}
+
+.rsyi-field label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 6px;
+	font-size: 14px;
+}
+
+.rsyi-field .req {
+	color: #dc2626;
+}
+
+.rsyi-field input,
+.rsyi-field select,
+.rsyi-field textarea {
+	display: block;
+	width: 100%;
+	padding: 10px 12px;
+	font-size: 15px;
+	line-height: 1.4;
+	border: 1px solid #cbd5e1;
+	border-radius: 6px;
+	background: #fff;
+	box-sizing: border-box;
+	transition: border-color 0.15s;
+}
+
+.rsyi-field input:focus,
+.rsyi-field select:focus,
+.rsyi-field textarea:focus {
+	outline: none;
+	border-color: #2563eb;
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.rsyi-field small {
+	display: block;
+	margin-top: 4px;
+	color: #64748b;
+	font-size: 12px;
+}
+
+.rsyi-form-actions {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.rsyi-btn {
+	display: inline-block;
+	padding: 12px 32px;
+	font-size: 16px;
+	font-weight: 700;
+	border: 0;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background 0.15s;
+	text-decoration: none;
+}
+
+.rsyi-btn-primary {
+	background: #2563eb;
+	color: #fff;
+}
+
+.rsyi-btn-primary:hover {
+	background: #1d4ed8;
+}
+
+.rsyi-notice {
+	max-width: 780px;
+	margin: 20px auto;
+	padding: 20px 24px;
+	border-radius: 8px;
+	border: 1px solid;
+}
+
+.rsyi-notice h3 {
+	margin: 0 0 8px;
+	font-size: 18px;
+}
+
+.rsyi-notice-success {
+	background: #ecfdf5;
+	border-color: #10b981;
+	color: #065f46;
+}
+
+.rsyi-notice-error {
+	background: #fef2f2;
+	border-color: #ef4444;
+	color: #991b1b;
+}
+
+.rsyi-notice-warning {
+	background: #fefce8;
+	border-color: #eab308;
+	color: #713f12;
+}
+
+.rsyi-status-card {
+	max-width: 780px;
+	margin: 20px auto;
+	padding: 20px 24px;
+	background: #f0f9ff;
+	border: 1px solid #0284c7;
+	border-radius: 8px;
+	color: #0c4a6e;
+}
+
+.rsyi-hidden {
+	display: none !important;
+}

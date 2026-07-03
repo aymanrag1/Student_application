@@ -1,0 +1,13 @@
+/* RSYI Student Affairs - RTL overrides */
+@import url('frontend.css');
+
+.rsyi-form,
+.rsyi-notice,
+.rsyi-status-card {
+	direction: rtl;
+	text-align: right;
+}
+
+.rsyi-section legend {
+	float: right;
+}
