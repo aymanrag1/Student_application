@@ -45,6 +45,7 @@ final class RSYI_Plugin {
 		RSYI_Stage_Two_Handler::register();
 		RSYI_Candidate_Detail::register();
 		RSYI_Interviews_Page::register();
+		RSYI_Medical_Page::register();
 	}
 
 	public function init(): void {

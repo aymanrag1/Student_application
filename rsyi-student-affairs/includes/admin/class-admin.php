@@ -12,6 +12,7 @@ class RSYI_Admin {
 	const MENU_SLUG           = 'rsyi-candidates';
 	const CANDIDATE_PAGE_SLUG = 'rsyi-candidate';
 	const INTERVIEWS_SLUG     = 'rsyi-interviews';
+	const MEDICAL_SLUG        = 'rsyi-medical';
 	const REPORTS_SLUG        = 'rsyi-reports';
 	const SETTINGS_SLUG       = 'rsyi-settings';
 
@@ -55,6 +56,15 @@ class RSYI_Admin {
 			'manage_options',
 			self::CANDIDATE_PAGE_SLUG,
 			array( 'RSYI_Candidate_Detail', 'render' )
+		);
+
+		add_submenu_page(
+			self::MENU_SLUG,
+			__( 'الفحص الطبي واختبار اللغة', 'rsyi-student-affairs' ),
+			__( 'الفحص الطبي واللغة', 'rsyi-student-affairs' ),
+			'manage_options',
+			self::MEDICAL_SLUG,
+			array( 'RSYI_Medical_Page', 'render' )
 		);
 
 		add_submenu_page(
