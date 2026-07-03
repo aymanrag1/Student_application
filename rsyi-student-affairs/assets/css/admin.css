@@ -113,3 +113,48 @@
 	font-size: 16px;
 	margin: 8px 0;
 }
+
+.rsyi-schedule-form {
+	background: #fff;
+	padding: 16px;
+	border: 1px solid #e2e8f0;
+	border-radius: 8px;
+	max-width: 600px;
+}
+
+.rsyi-schedule-form .rsyi-field {
+	margin-bottom: 12px;
+}
+
+.rsyi-committee-panel {
+	background: #f0f9ff;
+	padding: 16px;
+	border-radius: 8px;
+	border: 1px solid #0284c7;
+	margin: 8px 0;
+}
+
+.rsyi-committee-totals {
+	display: flex;
+	gap: 8px;
+	margin-bottom: 12px;
+	flex-wrap: wrap;
+}
+
+.rsyi-score-badge {
+	padding: 6px 12px;
+	border-radius: 8px;
+	background: #e2e8f0;
+	font-weight: 600;
+}
+
+.rsyi-score-badge.accepted { background: #d1fae5; color: #065f46; }
+.rsyi-score-badge.waiting  { background: #fef3c7; color: #78350f; }
+.rsyi-score-badge.rejected { background: #fee2e2; color: #991b1b; }
+
+.rsyi-final-decision {
+	margin-top: 12px;
+	padding: 12px;
+	background: #dbeafe;
+	border-radius: 6px;
+}

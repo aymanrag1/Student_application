@@ -45,7 +45,7 @@ class RSYI_Admin {
 			__( 'المقابلات', 'rsyi-student-affairs' ),
 			'manage_options',
 			self::INTERVIEWS_SLUG,
-			array( __CLASS__, 'render_placeholder' )
+			array( 'RSYI_Interviews_Page', 'render' )
 		);
 
 		add_submenu_page(
