@@ -47,6 +47,7 @@ final class RSYI_Plugin {
 		RSYI_Interviews_Page::register();
 		RSYI_Medical_Page::register();
 		RSYI_Export_Service::register();
+		RSYI_REST_Controller::register();
 	}
 
 	public function init(): void {
